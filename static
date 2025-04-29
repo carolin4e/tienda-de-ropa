@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fce4ec;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e91e63;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+header .cart button {
+    background-color: #fff;
+    border: none;
+    color: #e91e63;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .cart button:hover {
+    background-color: #f8bbd0;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #e91e63;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.product-card button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.product-card button:hover {
+    background-color: #d81b60;
+}
+
+footer {
+    background-color: #e91e63;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+let contadorCarrito = 0;
+
+function agregarAlCarrito(nombreProducto, precio) {
+    contadorCarrito++;
+    document.getElementById('cart-count').innerText = contadorCarrito;
+    alert(`${nombreProducto} por $${precio.toLocaleString('es-CO')} COP ha sido añadido al carrito.`);
+}
