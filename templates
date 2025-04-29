@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda LLIC - Ropa Moderna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Tienda LLIC</h1>
+        </div>
+        <div class="cart">
+            <button id="cart-btn">
+                🛒 Carrito (<span id="cart-count">0</span> productos)
+            </button>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Producto 1">
+            <h3>Vestido Floral</h3>
+            <p>Precio: $120,000 COP</p>
+            <button onclick="agregarAlCarrito('Vestido Floral', 120000)">Agregar al carrito</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Producto 2">
+            <h3>Chaqueta Elegante</h3>
+            <p>Precio: $180,000 COP</p>
+            <button onclick="agregarAlCarrito('Chaqueta Elegante', 180000)">Agregar al carrito</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Producto 3">
+            <h3>Blusa Casual</h3>
+            <p>Precio: $80,000 COP</p>
+            <button onclick="agregarAlCarrito('Blusa Casual', 80000)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Tienda LLIC - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
